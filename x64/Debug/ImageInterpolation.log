@@ -1,3 +1,7 @@
 ﻿  Main.cpp
-c:\users\admin\source\repos\imageinterpolation\imageinterpolation\main.cpp(19): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\admin\source\repos\imageinterpolation\imageinterpolation\main.cpp(70): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\admin\source\repos\imageinterpolation\imageinterpolation\main.cpp(71): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\admin\source\repos\imageinterpolation\imageinterpolation\main.cpp(120): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\admin\source\repos\imageinterpolation\imageinterpolation\main.cpp(150): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\admin\source\repos\imageinterpolation\imageinterpolation\main.cpp(160): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
   ImageInterpolation.vcxproj -> C:\Users\admin\source\repos\ImageInterpolation\x64\Debug\ImageInterpolation.exe
