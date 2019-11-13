@@ -7,3 +7,10 @@ cubic    - 0.025  - 0.092
 
 area     - 0.019  - 0.061
 lanczos4 - 0.153  - 0.178
+
+my interpolation 
+
+nearest  - 83 ms
+linear   - 1380 ms
+cubic    - 2000 ms
+mixed    - 1364 ms
