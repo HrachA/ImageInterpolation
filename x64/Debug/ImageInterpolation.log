@@ -1,19 +1,18 @@
 ﻿  Main.cpp
-c:\users\admin\source\repos\imageinterpolation\imageinterpolation\main.cpp(68): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-c:\users\admin\source\repos\imageinterpolation\imageinterpolation\main.cpp(69): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-c:\users\admin\source\repos\imageinterpolation\imageinterpolation\main.cpp(162): warning C4838: conversion from '_Tp' to 'double' requires a narrowing conversion
+c:\users\admin\source\repos\imageinterpolation\imageinterpolation\main.cpp(44): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\admin\source\repos\imageinterpolation\imageinterpolation\main.cpp(45): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\admin\source\repos\imageinterpolation\imageinterpolation\main.cpp(46): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\admin\source\repos\imageinterpolation\imageinterpolation\main.cpp(99): warning C4244: '=': conversion from 'double' to '_Tp', possible loss of data
           with
           [
               _Tp=uchar
           ]
-c:\users\admin\source\repos\imageinterpolation\imageinterpolation\main.cpp(173): warning C4244: '=': conversion from 'double' to '_Tp', possible loss of data
+c:\users\admin\source\repos\imageinterpolation\imageinterpolation\main.cpp(195): warning C4244: '=': conversion from 'double' to '_Tp', possible loss of data
           with
           [
               _Tp=uchar
           ]
-c:\users\admin\source\repos\imageinterpolation\imageinterpolation\main.cpp(231): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-c:\users\admin\source\repos\imageinterpolation\imageinterpolation\main.cpp(232): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-c:\users\admin\source\repos\imageinterpolation\imageinterpolation\main.cpp(246): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-c:\users\admin\source\repos\imageinterpolation\imageinterpolation\main.cpp(288): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-c:\users\admin\source\repos\imageinterpolation\imageinterpolation\main.cpp(298): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\admin\source\repos\imageinterpolation\imageinterpolation\main.cpp(306): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\admin\source\repos\imageinterpolation\imageinterpolation\main.cpp(336): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\admin\source\repos\imageinterpolation\imageinterpolation\main.cpp(346): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
   ImageInterpolation.vcxproj -> C:\Users\admin\source\repos\ImageInterpolation\x64\Debug\ImageInterpolation.exe
