@@ -1,21 +1,2 @@
-﻿  Interpolate.cpp
-c:\users\admin\source\repos\imageinterpolation\imageinterpolation\interpolate.cpp(5): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-c:\users\admin\source\repos\imageinterpolation\imageinterpolation\interpolate.cpp(6): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-c:\users\admin\source\repos\imageinterpolation\imageinterpolation\interpolate.cpp(7): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-c:\users\admin\source\repos\imageinterpolation\imageinterpolation\interpolate.cpp(42): warning C4244: '=': conversion from 'double' to '_Tp', possible loss of data
-          with
-          [
-              _Tp=uchar
-          ]
-c:\users\admin\source\repos\imageinterpolation\imageinterpolation\interpolate.cpp(93): warning C4244: '=': conversion from 'double' to '_Tp', possible loss of data
-          with
-          [
-              _Tp=uchar
-          ]
-c:\users\admin\source\repos\imageinterpolation\imageinterpolation\interpolate.cpp(168): error C2572: 'Resize': redefinition of default argument: parameter 1
-  c:\users\admin\source\repos\imageinterpolation\imageinterpolation\interpolate.h(40): note: see declaration of 'Resize'
-c:\users\admin\source\repos\imageinterpolation\imageinterpolation\interpolate.cpp(170): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-c:\users\admin\source\repos\imageinterpolation\imageinterpolation\interpolate.cpp(200): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-c:\users\admin\source\repos\imageinterpolation\imageinterpolation\interpolate.cpp(210): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-  Main.cpp
-  Generating Code...
+﻿  Main.cpp
+  ImageInterpolation.vcxproj -> C:\Users\admin\source\repos\ImageInterpolation\x64\Debug\ImageInterpolation.exe

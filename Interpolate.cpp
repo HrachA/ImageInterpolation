@@ -133,10 +133,22 @@ void resizeMixed(Mat& src, Mat& dst, double scale)
 	Mat greyMat(src.size(), CV_8U);
 	cv::cvtColor(src, greyMat, cv::COLOR_BGR2GRAY);
 
-	//    imwrite(name + "Greyscale.png", greyMat);
+	Sobel(greyMat, gradient, CV_32F, 1, 1, 5);
 
-	Sobel(greyMat, gradient, CV_8U, 1, 1, 5);
+ //	for (int i = 0; i < gradient.rows; ++i)
+	//{
+	//	for (int j = 0; j < gradient.cols; ++j)
+	//	{
+	//		cout << (float)gradient.at<float>(i, j) << " ";
+	//	}
+	//}
+
+	//imwrite("colorSmallGradient.png", gradient);
 	
+	//int nn = 0;
+	//int bl = 0;
+	//int bc = 0;
+
 	for (int i = 0; i < dst.rows; ++i)
 	{
 		for (int j = 0; j < dst.cols; ++j)
@@ -147,25 +159,29 @@ void resizeMixed(Mat& src, Mat& dst, double scale)
 			int x = (int)j1;
 			int y_1 = y + 1 < src.rows ? y + 1 : y;
 			int x_1 = x + 1 < src.cols ? x + 1 : x;
-			if (gradient.at<uchar>(y, x) < 1 && gradient.at<uchar>(y_1, x_1) < 1 &&
-			    gradient.at<uchar>(y_1, x) < 1 && gradient.at<uchar>(y, x_1) < 1)
+			if (abs(gradient.at<float>(y, x)) < 1 && abs(gradient.at<float>(y_1, x_1)) < 1 &&
+				abs(gradient.at<float>(y_1, x)) < 1 && abs(gradient.at<float>(y, x_1)) < 1)
 			{
 				interpolateNearest(i, j, src, dst, scale);
+				//nn++;
 			}
 			else
-			if (abs(gradient.at<uchar>(y, x)) < 100 && gradient.at<uchar>(y_1, x_1) < 100)
+			if (abs(gradient.at<float>(y, x)) < 300 && abs(gradient.at<float>(y_1, x_1)) < 300)
 			{
 				interpolateBilinear(i, j, src, dst, scale);
+				//bl++;
 			}
 			else
 			{
 				interpolateBicubic(i, j, src, dst, scale);
+				//bc++;
 			}
 		}
 	}
+	//cout << nn << ' ' << bl << ' ' << bc << endl;
 }
 
-Mat Resize(Mat& src, double scale, InterpolationType type = NEAREST)
+Mat Resize(Mat& src, double scale, InterpolationType type)
 {
 	Mat dst(src.rows * scale, src.cols * scale, src.type(), Scalar(0, 0, 0));
 	auto start = chrono::steady_clock::now();

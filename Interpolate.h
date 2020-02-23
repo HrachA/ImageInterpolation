@@ -8,7 +8,6 @@
 using namespace std;
 using namespace cv;
 
-
 enum InterpolationType
 {
 	NEAREST,
@@ -16,18 +15,6 @@ enum InterpolationType
 	BICUBIC,
 	MIXED
 };
-
-#include "Interpolate.h"
-
-void interpolateNearest(int i, int j, Mat& src, Mat& dst, double scale);
-
-double interpolateLinear(double p[2], double x);
-
-void interpolateBilinear(int i, int j, Mat& src, Mat& dst, double scale);
-
-double interpolateCubic(double p[4], double x);
-
-void interpolateBicubic(int i, int j, Mat& src, Mat& dst, double scale);
 
 void resizeNearest(Mat& src, Mat& dst, double scale);
 

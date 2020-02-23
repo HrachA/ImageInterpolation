@@ -1,12 +1,12 @@
 #include "Interpolate.h"
 
-string name = "earthMedium";
+string name = "colorsMedium";
 
 int main()
 {
 	Mat img = imread(name + ".jpg");
 
-	double scale = 2;
+	double scale = 8;
 
 	Mat result = Resize(img, scale, NEAREST);
 	imwrite(name + std::to_string((int)scale) + "nearest.png", result);
@@ -26,7 +26,6 @@ int main()
 	//	namedWindow("image", WINDOW_NORMAL);
 	//	imshow("image", result);
 	//	waitKey(0);
-
 
 	return 0;
 }
